@@ -10,7 +10,7 @@ body {
 
 .title-dark {
   font-size: 1.8em;
-  color: #1d142b;
+  color: #3f2464;
 }
 
 /* Seccion Menu y Header */
@@ -227,10 +227,6 @@ body {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25); 
     transform: scale(1.25);
-  }
-
-  .pad-g {
-      
   }
 
   .project-content {
