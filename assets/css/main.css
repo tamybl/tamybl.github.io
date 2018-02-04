@@ -2,8 +2,15 @@ body {
   background-color: #3b3939;
 }
 
-h2 {
-  font-size: 1.8rem;
+.title-light {
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+}
+
+.title-dark {
+  font-size: 1.8em;
+  color: #1d142b;
 }
 
 /* Seccion Menu y Header */
@@ -19,20 +26,24 @@ h2 {
   }
 
   .nav-menu {
-    background-color: rgba(59,57,57,0.6);
-    border-bottom: 2px solid #262626;
+    background-color: rgba(22,22,22,0.3);
   }
 
   .btn-view {
+    display: block;
     background-color: rgba(115,98,124,0.5);
     border: 2px solid #e6e6e6;
     color: #fff;
     text-shadow: 1px 1px #000;
     padding: 10px 20px;
     outline: none;
-    font-size: 0.6em !important;
+    font-size: 1.2em !important;
     margin: 10px 0;
 
+  }
+
+  a.btn-view:hover {
+    text-decoration: none;
   }
 
   .flex {
@@ -92,7 +103,7 @@ h2 {
   .icons:hover:after,
   .icons:active:after,
   .icons.hover:after {
-    border-color: transparent #c0392b;
+    border-color: transparent #d1666c;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
@@ -181,8 +192,76 @@ h2 {
 
   .about-content {
     width: 100%;
-    height: 600px;
+    height: 400px;
+    background-color: #f2eff6;
+    color: #222222;
+  }
+
+/* Seccion Skills */ 
+  .skills-content {
+    height: 400px;
     background-color: #fff;
   }
 
-/* Seccion 
+/* Seccion Projects  */
+
+  .img-zoom {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-zoom img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all 0.9s ease;
+    width: 100%;
+  }
+
+  .img-zoom:hover img {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25); 
+    transform: scale(1.25);
+  }
+
+  .pad-g {
+      
+  }
+
+  .project-content {
+    background-color: #f2eff6;
+    padding: 10px 10%;
+  }
+
+/* Seccion Contact Me */ 
+
+  .contact-content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url(../img/bg_contact.jpg);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 5%;
+    color: #fff;
+  }
+
+  .myform {
+    background-color: rgba(18, 16, 30, 0.5);
+  }
+
+/* Seccion Footer */
+
+  .footer-content {
+    width: 100%;
+    height: 200px;
+  }
+
+
+  
