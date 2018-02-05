@@ -51,7 +51,7 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-       text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #000;
   }
 
 
@@ -252,6 +252,7 @@ body {
   .categories ul li a {
     color: #8c859d;
     text-decoration: none;
+    margin: 0 10px; 
   }
 
   .categories ul li a:hover {
