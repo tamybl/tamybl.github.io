@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
 body {
   background-color: #3b3939;
+  font-family: 'Roboto', sans-serif;
 }
 
 .title-light {
@@ -27,6 +30,9 @@ body {
 
   .nav-menu {
     background-color: rgba(22,22,22,0.3);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
   }
 
   .btn-view {
@@ -42,7 +48,7 @@ body {
 
   }
 
-  a.btn-view:hover {
+  .btn-view:hover {
     text-decoration: none;
   }
 
@@ -113,6 +119,7 @@ body {
   }
 
   .logo {
+    width: 16%;
     max-width: 80px;
     margin-left: 5%;
 
@@ -283,6 +290,7 @@ body {
     background-position: center 80%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 15px 5%;
     color: #fff;
   }
