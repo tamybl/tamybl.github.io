@@ -8,8 +8,8 @@
 
 ### Diseño de Sketch
 
-![Portafolio Vista 1/2](http://tamybl.github.io/dev/sketch_1-2.jpg)
-![Portafolio Vista 2/2](http://tamybl.github.io/dev/sketch_2-2.jpg)
+![Portafolio Vista 1/2](https://raw.githubusercontent.com/tamybl/tamybl.github.io/master/dev/sketch_1-2.jpeg)
+![Portafolio Vista 2/2](https://raw.githubusercontent.com/tamybl/tamybl.github.io/master/dev/sketch_2-2.jpeg)
 
 ### Recursos
   #### Paletas
