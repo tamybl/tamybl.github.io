@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var menuHeight = $(".nav-menu").height();
-   $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="tooltip"]').tooltip(); 
 
   $(window).resize(function() {
     var bodyHeight = $(this).height();
@@ -10,8 +10,16 @@ $(document).ready(function(){
 
   // Animaciones secciones Sitio
   $(document).scroll(function () {
+    // About Me
     animatedSection("#about", "animated fadeInDown", menuHeight, ".ion-ios-person-outline");
-    
+    // Curriculum
+    animatedSection("#curriculum", "animated fadeInDown", menuHeight, ".ion-ios-paper-outline");   
+    // Skills
+    animatedSection("#skills", "animated fadeInDown", menuHeight, ".ion-ios-pie-outline");
+    // Projects 
+    animatedSection("#projects", "animated fadeInDown", menuHeight, ".ion-ios-lightbulb-outline");   
+    // Contact 
+    animatedSection("#contact", "animated fadeInDown", menuHeight, ".ion-ios-email-outline"); 
   })
 
 
@@ -35,14 +43,11 @@ function animatedSection(id, attribute, menu, classMenu) {
   var scrollPosition = $(document).scrollTop();
   var sectionTop = $(id).offset().top;
   var sectionBottom = $(id).offset().top + $(id).height();
-  console.log(menu);
-  if(sectionTop <= scrollPosition+menu+50 && sectionBottom >= scrollPosition+menu) {
-    //console.log('Estoy en la seccion');
+  if(sectionTop <= scrollPosition+menu+80 && sectionBottom >= scrollPosition+menu) {
     $(classMenu).parent().addClass("hover");
   }
   else {
     $(classMenu).parent().removeClass("hover");
-    //console.log('No estoy en la seccion');
   }
 }
 
