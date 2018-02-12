@@ -61,6 +61,11 @@ $(document).ready(function(){
     startDelay: 1000,
     loop: false
   }); 
+
+
+  // 
+
+
 });
 
 /* Funcion que recibe parametros de posicion de un ID, clases, tamaño de menu 
