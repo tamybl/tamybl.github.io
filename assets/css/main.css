@@ -24,6 +24,11 @@ body {
   color: #3a3839;
 }
 
+.btn-principal {
+  background-color: #d1666c;
+  border: 1px solid #b55b60;
+}
+
 /* Seccion Menu y Header */
   .home-content {
     width: 100%;
@@ -110,7 +115,7 @@ body {
   .icons:hover,
   .icons:active,
   .icons.hover {
-    color: #c0392b;
+    color: #d1666c;
   }
   .icons:hover:after,
   .icons:active:after,
@@ -333,9 +338,15 @@ body {
     padding: 4%;
   }
 
-  .myform, textarea, .form-control {
+  .inputform, textarea, .form-control {
     background-color: rgba(18, 16, 30, 0.5);
     border: 1px solid #8b5666;
+  }
+
+  .inputform:focus {
+    background-color: rgba(18, 16, 30, 0.5);
+    border: 1px solid #8b5666;
+    color: #fff;
   }
 
 
