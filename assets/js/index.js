@@ -10,6 +10,15 @@ $(document).ready(function(){
 
   // Animaciones secciones Sitio
   $(document).scroll(function () {
+    // Cambio estilo menu 
+    if($(window).height() <= $(document).scrollTop()+menuHeight) {
+      console.log('Aqui el menu tiene que cambiar');
+      $('.nav-menu').css('background-color', 'rgba(22,22,22,0.9)');
+    }
+    else {
+      $('.nav-menu').css('background-color', 'rgba(22,22,22,0.3)');
+    }
+
     // About Me
     animatedSection("#about", "animated fadeInDown", menuHeight, ".ion-ios-person-outline");
     // Curriculum
@@ -23,6 +32,24 @@ $(document).ready(function(){
   })
 
 
+  $("#myForm").submit(function(event){
+      event.preventDefault();
+      $.ajax({
+        url: "https://www.enformed.io/se4gmfdd",
+        method: "post",
+        dataType: "json",
+        accepts: "application/json",
+        data: $("#myForm").serialize(),
+        success: function(){
+          console.log("Your form was successfully received!");
+          // Show a success message here...
+        },
+        error: function(){
+          console.log("Failure. Try again.");
+          // Show an error message here...
+        }
+      });
+    });
 
 
   // Texto en consola imagen introduccion

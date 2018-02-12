@@ -2,6 +2,7 @@
 
 body {
   background-color: #3b3939;
+  color: #3a3839;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,6 +20,10 @@ body {
   text-transform: uppercase;
 }
 
+.text-color {
+  color: #3a3839;
+}
+
 /* Seccion Menu y Header */
   .home-content {
     width: 100%;
@@ -33,6 +38,7 @@ body {
 
   .nav-menu {
     background-color: rgba(22,22,22,0.3);
+    transition: all 0.8s ease;
     position: fixed;
     z-index: 10;
     width: 100%;
