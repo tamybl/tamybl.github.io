@@ -329,6 +329,10 @@ body {
     color: #fff;
   }
 
+  .contact-image {
+    padding: 4%;
+  }
+
   .myform, textarea, .form-control {
     background-color: rgba(18, 16, 30, 0.5);
     border: 1px solid #8b5666;

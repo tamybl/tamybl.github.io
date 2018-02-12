@@ -31,7 +31,7 @@ $(document).ready(function(){
     animatedSection("#contact", "animated fadeInDown", menuHeight, ".ion-ios-email-outline"); 
   })
 
-
+  // Submit de Formulario
   $("#myForm").submit(function(event){
       event.preventDefault();
       $.ajax({
@@ -61,10 +61,6 @@ $(document).ready(function(){
     startDelay: 1000,
     loop: false
   }); 
-
-
-  // 
-
 
 });
 
