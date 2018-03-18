@@ -13,10 +13,11 @@ $(document).ready(function(){
     // Cambio estilo menu 
     if($(window).height() <= $(document).scrollTop()+menuHeight) {
       console.log('Aqui el menu tiene que cambiar');
-      $('.nav-menu').css('background-color', 'rgba(22,22,22,0.9)');
+      $('.nav-menu').addClass('nav-post');
     }
     else {
-      $('.nav-menu').css('background-color', 'rgba(22,22,22,0.3)');
+      $('.nav-menu').removeClass('nav-post');
+      //$('.nav-menu').css('background-color', 'rgba(22,22,22,0.3)');
     }
 
     // About Me
@@ -51,16 +52,10 @@ $(document).ready(function(){
       });
     });
 
+function consoleText() {
+  let text = "Mi nombre es Tamara Bravo y soy Developer Jr"
+}
 
-  // Texto en consola imagen introduccion
-  var typed = new Typed("#typed", {
-    stringsElement: '#typed-strings',
-    typeSpeed: 0,
-    backSpeed: 0,
-    backDelay: 500,
-    startDelay: 1000,
-    loop: false
-  }); 
 
 });
 

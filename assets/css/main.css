@@ -43,11 +43,19 @@ body {
 
   .nav-menu {
     background-color: rgba(22,22,22,0.3);
-    transition: all 0.8s ease;
+    /*transition: all 0.8s ease;*/
     position: fixed;
     z-index: 10;
     width: 100%;
   }
+
+  .nav-post {
+    background-image: url(../img/header.jpg);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
   .btn-view {
     display: block;
@@ -343,10 +351,11 @@ body {
     border: 1px solid #8b5666;
   }
 
-  .inputform:focus {
+  .inputform:focus, textarea:focus {
     background-color: rgba(18, 16, 30, 0.5);
     border: 1px solid #8b5666;
     color: #fff;
+    outline: 0 none;
   }
 
 
