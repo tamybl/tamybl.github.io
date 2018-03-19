@@ -42,7 +42,7 @@ article {
   background-image: url(../img/header.jpg);
   background-position: center 80%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
 }
 
 .tb-nav {
@@ -53,7 +53,7 @@ article {
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   z-index: 999999;
-  height: 100vh;
+  //height: 100vh;
   
   ul {
   padding: 0;
@@ -76,7 +76,6 @@ article {
 
 .logo {
   padding: 3em 0.6em;
-  display: inline-block;
 
   img {
     max-width: 100px;
@@ -91,17 +90,18 @@ article {
 .tb-content {
   display: flex;
   flex: 1 1 85%;
+  flex-direction: column;
   max-width: 85%;
-
-  
 }
 
 .tb-text {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  max-width: 960px;
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 1080px;
+  min-height: 100vh;
 }
 
 .tb-nav-content {
@@ -165,7 +165,10 @@ article {
    .tb-content {
       width: 100%;
       overflow: initial;
+      flex: 1 1 100%;
+      max-width: 100%;
       top: 200px;
+      min-height: 100vh;
    }
 
    .tb-nav-content {
@@ -194,8 +197,8 @@ article {
   font-size: 1em;
   }
 
-  #about-me {
-    margin-top: 70px;
+  .tb-text {
+    padding-top: 70px;
   }
 }
 
@@ -252,7 +255,182 @@ article {
 #about-me {
     width: 100%;
     overflow: hidden;
-    padding: 0;
     color: #fff;
-    max-height: 100vh;
 }
+
+// Seccion Curriculum
+#curriculum {
+  background-color: #fff;
+}
+
+// Seccion Habilidades
+#skills {
+  background-color: #f2eff6;
+}
+// Seccion Proyectos
+#projects {
+  background-color: #fff;
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url(../img/bg_contact.jpg);
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15px 5%;
+  color: #fff;
+}
+
+.contact-image {
+    padding: 4%;
+  }
+
+  .inputform, textarea, .form-control {
+    background-color: rgba(18, 16, 30, 0.5);
+    border: 1px solid #8b5666;
+  }
+
+  .inputform:focus, textarea:focus {
+    background-color: rgba(18, 16, 30, 0.5);
+    border: 1px solid #8b5666;
+    color: #fff;
+    outline: 0 none;
+  }
+
+/* Iconos Menu */
+  .icons {
+    position: relative;
+    font-size: 33px;
+    font-weight: 600;
+    color: #e6e6e6 !important;
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .icons:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #e6e6e6;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+  }
+  .icons:before {
+    color: #fff;
+  }
+  .icons:before,
+  .icons:after {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .icons:hover,
+  .icons:active,
+  .icons.hover {
+    color: #d1666c;
+  }
+  .icons:hover:after,
+  .icons:active:after,
+  .icons.hover:after {
+    border-color: transparent #d1666c;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  .icons-mobile {
+    width: 30px;
+    height: 30px;
+    font-size: 1.4em;
+    padding: 5px; 
+  }
+
+/* Seccion Skills */ 
+  .skills-content {
+    height: 400px;
+    background-color: #f2eff6;
+  }
+
+/* Seccion Projects  */
+
+  .project-content {
+    background-color: #fff;
+    padding: 10px 10%;
+  }
+
+  .categories {
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+    border-bottom: 1px solid #e8e9ea;
+    border-top: 1px solid #e8e9ea;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .categories ul li, .categories ul {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .categories ul li a {
+    color: #8c859d;
+    text-decoration: none;
+    margin: 0 10px; 
+  }
+
+  .categories ul li a:hover {
+    color: #e76190;
+    text-decoration: none;
+  }
+
+  .categories ul li .active {
+    background-color: #5c4078;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 10px;
+  }
+
+  .categories ul li .active:hover {
+    background-color: #e5e5e5;
+  }
+
+  .img-zoom {
+    width: 100%;
+    height: auto;
+    background-color: #456399;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-zoom img {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all 0.9s ease;
+    width: 100%;
+  }
+
+  .img-zoom:hover img {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25); 
+    transform: scale(1.25);
+    opacity: 0.4;
+  }
