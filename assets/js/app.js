@@ -1,4 +1,5 @@
 $(document).ready( function () {
+  $('[data-toggle="tooltip"]').tooltip(); 
 
   if(screen.width < 750 || $(window).width() < 750) {
     $('.tb-nav-content ul').hide();
@@ -36,6 +37,10 @@ $(document).ready( function () {
     
   });
 
+  $('.tags').click(function (e) {
+    tagsFilter(e);
+  })
+
   
 })
 
@@ -45,12 +50,17 @@ function scrollSection () {
     var idTop = $(this).offset().top;
     var idBottom = ($(this).height())/2+idTop;
     if (idTop-60 <= scrollPosition && idBottom >= scrollPosition) {
-      $('.tb-nav ul').find('li').removeClass('active');
-      $('.tb-nav-content ul li').find('[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+      $('.tb-nav ul').find('li').removeClass('activo');
+      $('.tb-nav-content ul li').find('[href="#'+$(this).attr('id')+'"]').parent().addClass('activo');
     }
   });
 }
 
 function toggleMenu () {
   $('.tb-nav-content ul').toggle(500);
+}
+
+function tagsFilter (e) {
+  e.preventDefault();
+  console.log('Filtro');
 }
