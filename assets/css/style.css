@@ -27,7 +27,7 @@ article p {
   justify-content: space-between;
   align-items: stretch;
   padding: 0;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header-bg.jpg);
   background-position: center 80%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -37,7 +37,7 @@ article p {
   flex-direction: column;
   flex: 1 1 15%;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
   z-index: 999999; }
   .tb-nav ul {
@@ -210,7 +210,16 @@ article p {
     display: block; }
 
 .awards-lab {
+  max-width: 120px;
   filter: invert(100%); }
+
+.skill-text {
+  color: #ff98bc; }
+
+.skill-icon {
+  width: 96px;
+  margin: auto;
+  vertical-align: inherit; }
 
 #curriculum {
   background-color: #fff; }
@@ -235,6 +244,11 @@ article p {
   .skill-items li {
     list-style-type: none;
     display: inline-block; }
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
 
 #projects {
   background-color: #fff; }

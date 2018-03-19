@@ -87,7 +87,7 @@ function tagsFilter (e) {
 
 function initialSetupMin() {
   $('.tb-nav-content ul').hide();
-      $('.logo img').css('width','55px');
+      $('.logo img').css('width','46px');
       $('.list').each(function () {
         $(this).find('a').removeClass('icons');
         $(this).find('a span').first().hide();
@@ -97,7 +97,7 @@ function initialSetupMin() {
 
 function initialSetupMax() {
   $('.tb-nav-content ul').show();
-      $('.logo img').css('width','100px');
+      $('.logo img').css('width','80px');
       $('.list').each(function () {
         $(this).find('a').addClass('icons');
         $(this).find('a span').first().show();
