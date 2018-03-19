@@ -52,7 +52,8 @@ article p {
 .list {
   padding: .6em 3em;
   font-size: .95em;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: right; }
 
 .logo {
   padding: 3em 0.6em; }
@@ -347,6 +348,9 @@ article p {
   height: 30px;
   font-size: 1.4em;
   padding: 5px; }
+
+.rrss {
+  display: inline-block; }
 
 /* Seccion Skills */
 .skills-content {

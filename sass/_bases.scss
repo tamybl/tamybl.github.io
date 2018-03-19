@@ -71,6 +71,7 @@ article {
   padding: .6em 3em;
   font-size: .95em;
   font-weight: bold;
+  text-align: right;
 }
 
 .logo {
@@ -445,6 +446,10 @@ article {
     height: 30px;
     font-size: 1.4em;
     padding: 5px; 
+  }
+
+  .rrss {
+    display: inline-block;
   }
 
 /* Seccion Skills */ 
