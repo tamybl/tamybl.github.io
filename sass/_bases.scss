@@ -183,8 +183,8 @@ article {
    .toggle-menu {
     display: block;
     float: right;
-    font-size: 1.3em;
-    padding: .15em .6em;
+    font-size: 1.6em;
+    padding: .35em .6em;
    }
 
    article {
@@ -310,6 +310,16 @@ article {
 // Seccion Habilidades
 #skills {
   background-color: #f2eff6;
+}
+
+.skill-items {
+  width: 100%;
+  text-align: center;
+  font-size: 6em;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
 }
 // Seccion Proyectos
 #projects {

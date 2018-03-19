@@ -2,8 +2,10 @@ $(document).ready( function () {
   $('[data-toggle="tooltip"]').tooltip(); 
 
   if(screen.width < 750 || $(window).width() < 750) {
-    $('.tb-nav-content ul').hide();
-    $('.logo img').css('width','55px');
+    initialSetupMin();
+  }
+  else {
+    initialSetupMax();
   }
 
   $(document).scroll(function () {
@@ -27,12 +29,10 @@ $(document).ready( function () {
     var size = $(this).width();
     console.log(size);
     if(size < 752) {
-      $('.tb-nav-content ul').hide();
-      $('.logo img').css('width','55px');
+      initialSetupMin();
     }
     else {
-      $('.tb-nav-content ul').show();
-      $('.logo img').css('width','100px');
+      initialSetupMax();
     }
     
   });
@@ -41,17 +41,37 @@ $(document).ready( function () {
     tagsFilter(e);
   })
 
+  // Submit de Formulario
+  $("#myForm").submit(function(event){
+      event.preventDefault();
+      $.ajax({
+        url: "https://www.enformed.io/se4gmfdd",
+        method: "post",
+        dataType: "json",
+        accepts: "application/json",
+        data: $("#myForm").serialize(),
+        success: function(){
+          console.log("Your form was successfully received!");
+          // Show a success message here...
+        },
+        error: function(){
+          console.log("Failure. Try again.");
+          // Show an error message here...
+        }
+      });
+    });
+
   
 })
 
 function scrollSection () {
   var scrollPosition = $(document).scrollTop();
-  $('.tb-content article').each(function () {
+  $('.tb-content section').each(function () {
     var idTop = $(this).offset().top;
     var idBottom = ($(this).height())/2+idTop;
     if (idTop-60 <= scrollPosition && idBottom >= scrollPosition) {
-      $('.tb-nav ul').find('li').removeClass('activo');
-      $('.tb-nav-content ul li').find('[href="#'+$(this).attr('id')+'"]').parent().addClass('activo');
+      $('.tb-nav ul').find('li a').removeClass('hover');
+      $('.tb-nav-content ul li').find('[href="#'+$(this).attr('id')+'"]').addClass('hover');
     }
   });
 }
@@ -63,4 +83,24 @@ function toggleMenu () {
 function tagsFilter (e) {
   e.preventDefault();
   console.log('Filtro');
+}
+
+function initialSetupMin() {
+  $('.tb-nav-content ul').hide();
+      $('.logo img').css('width','55px');
+      $('.list').each(function () {
+        $(this).find('a').removeClass('icons');
+        $(this).find('a span').first().hide();
+        $(this).find('a span:nth-child(2)').show();
+      });
+}
+
+function initialSetupMax() {
+  $('.tb-nav-content ul').show();
+      $('.logo img').css('width','100px');
+      $('.list').each(function () {
+        $(this).find('a').addClass('icons');
+        $(this).find('a span').first().show();
+        $(this).find('a span:nth-child(2)').hide();
+      })
 }
