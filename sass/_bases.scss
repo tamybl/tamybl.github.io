@@ -48,6 +48,7 @@ article {
   display: flex;
   flex-direction: column;
   flex: 1 1 15%;
+  max-width: 110px;
   padding: 0;
   background-color: rgba(0,0,0,0.3);
   color: #fff;
@@ -68,17 +69,17 @@ article {
 }
 
 .list {
-  padding: .6em 3em;
-  font-size: .95em;
+  padding: .3em 0;
+/* font-size: .95em; */
   font-weight: bold;
-  text-align: right;
+  text-align: center;
 }
 
 .logo {
   padding: 3em 0.6em;
 
   img {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 
@@ -91,7 +92,7 @@ article {
   display: flex;
   flex: 1 1 85%;
   flex-direction: column;
-  max-width: 85%;
+  max-width: 100%;
 }
 
 .tb-text {
@@ -108,6 +109,7 @@ article {
   top: 0;
   position: fixed;
   width: 15%;
+  max-width: 110px;
   z-index: 999999;
 }
 
@@ -159,7 +161,9 @@ article {
    .tb-nav {
     position: fixed;
     height: auto;
+    background-color: rgba(0,0,0,0.8);
     //overflow: hidden;
+    max-width: 100%;
    }
 
    .tb-content {
@@ -174,6 +178,7 @@ article {
    .tb-nav-content {
     position: static;
     width: 100%;
+    max-width: 100%;
    }
 
   .logo {
@@ -197,8 +202,17 @@ article {
     font-size: 1em;
   }
 
+  .list {
+    text-align: right;
+    padding: .3em 1em;
+  }
+
   .tb-text {
     padding-top: 70px;
+  }
+
+  .menu-list {
+    border-top: 2px solid #000;
   }
 }
 
@@ -214,15 +228,18 @@ article {
 
   .tb-content {
   flex: 1 1 80%;
-  max-width: 80%;
+  max-width: 100%;
+
   } 
 
   .tb-nav-content {
     width: 20%;
+    max-width: 110px;
   }
 
   .tb-nav {
     flex: 1 1 20%;
+    max-width: 110px;
   }
 }
 
@@ -286,7 +303,6 @@ article {
 
 .awards-lab {
   max-width: 120px;
-  filter:invert(100%);
 }
 
 .skill-text {
@@ -370,7 +386,7 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 15px 5%;
+  //padding: 15px 5%;
   color: #fff;
 }
 
@@ -394,17 +410,16 @@ article {
 /* Iconos Menu */
   .icons {
     position: relative;
-    font-size: 33px;
-    font-weight: 600;
+    font-size: 36px;
+    /* font-weight: 600; */
     color: #e6e6e6 !important;
     width: 50px;
     height: 50px;
-    margin: 10px 20px;
-    padding: 0;
+    margin: 10px auto;
     display: inline-block;
     text-align: center;
     -webkit-perspective: 50em;
-    perspective: 50em;
+    /* perspective: 50em; */
     text-decoration: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -545,4 +560,26 @@ article {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+}
+
+.rrss {
+  display: inline;
+  font-size: 1.6em;
+   a {
+    text-decoration: none;
+   }
+  i, .fab {
+    color: #fff;
+  }
+  svg {
+    color: #fff;
+  }
+}
+
+.redes {
+  text-align: center;
+}
+
+.btn {
+  margin: .2em auto;
 }

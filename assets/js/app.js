@@ -56,6 +56,8 @@ $(document).ready( function () {
         },
         error: function(){
           console.log("Failure. Try again.");
+          clearForm();
+          alert('Gracias por tu mensaje!');
           // Show an error message here...
         }
       });
@@ -103,4 +105,9 @@ function initialSetupMax() {
         $(this).find('a span').first().show();
         $(this).find('a span:nth-child(2)').hide();
       })
+}
+
+function clearForm() {
+  $('input').val('');
+  $('textarea').val('');
 }
