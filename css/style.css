@@ -34,6 +34,7 @@ h1, h2 {
 
 .loader div.cont span {
     display: inline-block;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20vh;
     animation: pulse 0.4s alternate infinite ease-in-out;
 }
@@ -57,4 +58,5 @@ h1, h2 {
     width: 120px;
     text-align: center;
     margin: 30px auto;
+    font-weight: 900;
 }
