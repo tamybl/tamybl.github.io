@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamara Bravo - Frontend Developer</title>
+    <link rel="stylesheet" href="css/stylevue.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="menu">
+           <a :href="page" class="menu-item" v-for="page in pages" v-bind:key='page' @click.prevent='() => {currentData = page; showModal = true }'><h3>{{page}}</h3></a> 
+        </div>
+        
+
+        <transition name="modal">
+            <div class="modal-mask" v-if="showModal" aria-hidden="true">
+                <div class="modal-wrapper">
+                    <button @click="showModal = false">x</button>
+                    <p>
+                        <component :is="currentComponent"></component>
+                    </p>
+                </div>
+            </div>
+        </transition>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="js/components/about.js"></script>
+    <script src="js/components/projects.js"></script>
+    <script src="js/components/skills.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
