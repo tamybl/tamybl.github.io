@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tamara Bravo - Frontend Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/stylevue.css">
 </head>
 
 <body>
 
     <div id="app">
-        <div class="menu">
-           <a :href="page" class="menu-item" v-for="page in pages" v-bind:key='page' @click.prevent='() => {currentData = page; showModal = true }'><h3>{{page}}</h3></a> 
-        </div>
+        <ul class="menu">
+            <li class="title-header"><h1>{TB}</h1> <h2>Tamara Bravo</h2> <h3>Frontend Developer</h3></li>
+           <li v-for="page in pages" class="menu-item"><a class="menu-link" :href="page" v-bind:key='page' @click.prevent='() => {currentData = page; showModal = true }'><h3>{{page}}</h3></a></li> 
+        </ul>
         
 
         <transition name="modal">
@@ -33,6 +35,8 @@
     <script src="js/components/about.js"></script>
     <script src="js/components/projects.js"></script>
     <script src="js/components/skills.js"></script>
+    <script src="js/components/blog.js"></script>
+    <script src="js/components/contact.js"></script>
     <script src="js/index.js"></script>
 </body>
 

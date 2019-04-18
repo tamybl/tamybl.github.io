@@ -1,13 +1,22 @@
+:root {
+    --main-font: 'Roboto Mono', monospace;
+    --title-font: 'Quicksand', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--main-font);
 }
 
 #app {
-     height: 100vh;
-     overflow: hidden;
-     background: url(https://cdn.oreillystatic.com/en/assets/1/event/195/botday2016_homepage_header.jpg) no-repeat;
-     background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background: url(./../img/bg_subtle_white.png) repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-size: cover; */
 }
 
 .modal-mask {
@@ -33,28 +42,39 @@ body {
 
 .menu {
     display: grid;
-    height: 60vw;
+    height: 65vw;
     max-width: 100vh;
-    width: 60vw;
+    width: 65vw;
     max-height: 100vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    transform: rotate(-35deg);
+    transform: rotate(-30deg);
     margin: 0 auto;
+    grid-gap: 5px;
+    padding: 0;
 }
 
 .menu-item {
     border: 1px solid #ccc;
+    list-style: none;
+}
+
+.menu-item .menu-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-
 }
 
 .menu-item h3 {
-    transform: rotate(35deg);
-    color: #fff;
+    transform: rotate(30deg);
+    color: #333;
+    font-family: var(--title-font);
+    text-transform: capitalize;
+    font-size: calc(20px + 0.4vw);
 }
 
 .menu-item:nth-child(1) {
@@ -64,11 +84,51 @@ body {
 .menu-item:nth-child(2) {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    background: url(./../img/bg_skills.png) no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 150%;
+    top: -30%;
+    left: -30%;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.menu-item:nth-child(2) .menu-link {
+    background: rgba(117, 241, 131, 0.5);
+    transition: all 0.5s ease-in;
+}
+
+.menu-item:nth-child(2) .menu-link:hover {
+    background: rgba(117, 241, 131, 0.9);
+}
+
+.menu-item:nth-child(2) .menu-link:hover h3 {
+    color: #fff;
 }
 
 .menu-item:nth-child(3) {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    background: url(./../img/bg_projects.png) no-repeat;
+    background-size: cover;
+}
+
+.menu-item:nth-child(3) .menu-link {
+    background: #fd9b8c9c;
+    transition: all 0.5s ease-in;
+}
+
+.menu-item:nth-child(3) .menu-link:hover {
+    background: #fd9b8cec;
 }
 
 .menu-item:nth-child(4) {
@@ -81,18 +141,21 @@ body {
     grid-row: 3 / span 1;
 }
 
+.title-header {
+    
+}
+
 /* Transition modal: Nativo de vuejs */
 
 .modal-enter {
     opacity: 0;
-  }
-  
-  .modal-leave-active {
+}
+
+.modal-leave-active {
     opacity: 0;
-  }
-  
-  .modal-enter .modal-container,
-  .modal-leave-active .modal-container {
+}
+
+.modal-enter .modal-container, .modal-leave-active .modal-container {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}
