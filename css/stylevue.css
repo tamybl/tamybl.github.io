@@ -143,7 +143,7 @@ body {
 
 .title-header {
     list-style: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .title-header .content {
@@ -154,6 +154,8 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    font-size: calc(8px + 0.6vw);
+    font-family: var(--title-font);
 }
 
 .title-header .content h1, .title-header .content h2, .title-header .content h3 {
