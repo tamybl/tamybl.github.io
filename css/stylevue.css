@@ -142,7 +142,22 @@ body {
 }
 
 .title-header {
-    
+    list-style: none;
+    overflow: hidden;
+}
+
+.title-header .content {
+    transform: rotate(30deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.title-header .content h1, .title-header .content h2, .title-header .content h3 {
+    margin: 5px auto;
 }
 
 /* Transition modal: Nativo de vuejs */
