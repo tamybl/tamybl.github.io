@@ -17,6 +17,10 @@
             <li class="title-header"><div class="content"><h1>{TB}</h1> <h2>Tamara Bravo</h2> <h3>Frontend Developer</h3></div> </li>
            <li v-for="page in pages" class="menu-item"><a class="menu-link" :href="page" v-bind:key='page' @click.prevent='() => {currentData = page; showModal = true }'><h3>{{page}}</h3></a></li> 
         </ul>
+
+        <footer>
+            <footer-section></footer-section>
+        </footer>
         
 
         <transition name="modal">
@@ -37,6 +41,7 @@
     <script src="js/components/skills.js"></script>
     <script src="js/components/blog.js"></script>
     <script src="js/components/contact.js"></script>
+    <script src="js/components/footer.js"></script>
     <script src="js/index.js"></script>
 </body>
 
