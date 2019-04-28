@@ -18,15 +18,21 @@ nav {
 
 h1.title-site {
     font-family: 'Potra', sans-serif;
-    font-size: calc(50px + 5vw);
+    font-size: calc(46px + 4.8vw);
     max-width: min-content;
     text-align: center;
     color: #a618dc;
     line-height: 1;
+    margin: 0 auto;
+}
+
+.header-content {
+    text-align: center;
+    width: 45%;
 }
 
 .header-img {
-    width: 50%;
+    width: 55%;
     max-width: calc(100vh - 100px);
 }
 
