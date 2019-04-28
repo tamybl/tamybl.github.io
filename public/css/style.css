@@ -1,8 +1,26 @@
+@font-face {
+    font-family: Potra;
+    src: url(,/../../fonts/Potra.ttf);
+  }
+
 body {
     font-family: 'Comfortaa', cursive;
 }
 nav {
     display: flex;
+}
+
+h1.title-site {
+    font-family: 'Potra', sans-serif;
+    font-size: calc(50px + 5vw);
+    max-width: min-content;
+    text-align: center;
+    color: #a618dc;
+    line-height: 1;
+}
+
+.header-img {
+    width: 50%;
 }
 
 nav .nav-menu {
