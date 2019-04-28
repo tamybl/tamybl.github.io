@@ -10,6 +10,12 @@ nav {
     display: flex;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 h1.title-site {
     font-family: 'Potra', sans-serif;
     font-size: calc(50px + 5vw);
@@ -21,6 +27,7 @@ h1.title-site {
 
 .header-img {
     width: 50%;
+    max-width: calc(100vh - 100px);
 }
 
 nav .nav-menu {
