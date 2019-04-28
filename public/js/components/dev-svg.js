@@ -167,13 +167,14 @@ Vue.component('dev-svg', {
 		hideLines: function () {
 			this.animatedLines(this.$refs.linecodetop, 1);
 			this.animatedLines(this.$refs.linecodebottom, 2);
-			console.log(this.$refs.linecodetop);
+			//console.log(this.$refs.linecodetop);
 		},
 		animatedLines: function (el, delayTime) {
 			el.style.opacity = '0';
 			TweenMax.to(el, 1, {
+				//x: 100,
 				delay: delayTime,
-				opacity: 0.3,
+				opacity: 0.4,
 				ease: Sine.easeInOut
 			})
 		}
