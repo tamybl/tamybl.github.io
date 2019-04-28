@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Tamara Bravo - Frontend Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,16 +15,38 @@
     <div id="app">
         <div class="loader"></div>
         <div class="home">
-            <header>
-                <logo></logo>
+            <header class="header">
+                <nav>
+                        <router-link to="./" class="logo"> <logo></logo></router-link>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <router-link to="/about" class="nav-link">ABOUT</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/skills" class="nav-link">SKILLS</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/projects" class="nav-link">PROJECTS</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/blog" class="nav-link">BLOG</router-link>
+                        </li>
+                        <li class="nav-item">
+                                <router-link to="/contact" class="nav-link">CONTACT</router-link>
+                        </li>
+                    </ul>
+                </nav>
+
+
             </header>
             <main>
-                <h2>{{title}}</h2>
-
+                <router-view></router-view>
             </main>
             <footer>
 
             </footer>
+
+
         </div>
 
 
@@ -32,6 +55,10 @@
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="js/components/logo.js"></script>
     <script src="js/components/dev-svg.js"></script>
+    <script src="js/components/home.js"></script>
+    <script src="js/components/about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/routes.js"></script>
     <script src="js/index.js"></script>
 </body>
 
