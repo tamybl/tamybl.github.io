@@ -1,6 +1,6 @@
 const App = Vue.component('App', {
     template: //html 
-    `<div>
+    `<div class="app">
         <div class="loader"></div>
         <div>
             <nav-bar></nav-bar>

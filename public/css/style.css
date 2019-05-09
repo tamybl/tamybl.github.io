@@ -5,7 +5,18 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
 }
+
+.app {
+    background-color: white;
+    background-image: linear-gradient(#fffce6, #ffffbd);
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    min-height: 100vh;
+}
+
 nav {
     display: flex;
     justify-content: space-around
@@ -15,10 +26,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: calc(100vh - 100px);
 }
 
 h1.title-site {
     font-family: 'Potra', sans-serif;
+    font-weight: 500;
     font-size: calc(46px + 4.8vw);
     max-width: min-content;
     text-align: center;
