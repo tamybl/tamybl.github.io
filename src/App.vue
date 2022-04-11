@@ -1,25 +1,27 @@
 <template>
   <div id="app">
-    <Loader />
-    <nav-bar></nav-bar>
+    <Loader v-if="false" />
     <Header />
+    <AboutMe />
   </div>
 </template>
 
 <script>
 import Loader from "./components/Loader.vue";
 import Header from "./components/Header.vue";
-import NavBar from "./components/NavBar.vue";
+import AboutMe from "./components/AboutMe.vue";
 
 export default {
   name: "App",
   components: {
     Loader,
-    NavBar,
     Header,
+    AboutMe,
   },
   data() {
-    return {};
+    return {
+      path: document.location.origin,
+    };
   },
   mounted() {},
 };
@@ -27,6 +29,7 @@ export default {
 
 <style>
 @import "./css/style.css";
+@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
