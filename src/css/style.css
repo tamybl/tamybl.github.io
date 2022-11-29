@@ -19,6 +19,10 @@
 /*===========================
     1. COMMON css 
 ===========================*/
+:root {
+  --primary-color: #eb3656;
+  --secondary-color: #eb3656;
+}
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");
 body {
   font-family: "Hind", sans-serif;
@@ -686,7 +690,7 @@ p {
   position: relative;
 }
 .navbar .navbar-brand img {
-  max-width: 112px;
+  max-width: 100px;
 }
 .navbar .navbar-toggler .toggler-icon {
   width: 30px;
@@ -815,7 +819,7 @@ p {
 .header-banner .banner-content .banner-title {
   font-size: 60px;
 }
-.header-banner .banner-content .banner-title span {
+.header-banner .banner-content .banner-title span.featured {
   color: #eb3656;
 }
 @media (max-width: 767px) {
@@ -1103,6 +1107,7 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+  left: 0;
 }
 .single-project .project-content {
   position: absolute;

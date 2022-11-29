@@ -1,7 +1,7 @@
 <template>
   <header id="home" class="header-area pt-100">
     <div class="shape header-shape-one">
-      <img src="https://i.ibb.co/DL9N8Kn/shape-1.png" alt="shape" />
+      <img :src="shape1" alt="shape" />
     </div>
     <!-- header shape one -->
 
@@ -26,7 +26,7 @@
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
               <a class="navbar-brand" href="#">
-                <img src="https://i.ibb.co/8bRPpdr/logo.png" alt="Logo" />
+                <img :src="logoTB" alt="Logo" />
               </a>
               <button
                 class="navbar-toggler"
@@ -45,22 +45,22 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="page-scroll" href="#home">Home</a>
+                    <a class="page-scroll" href="#home">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#about">Sobre Mí</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#service">Services</a>
+                    <a class="page-scroll" href="#service">Conocimientos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#project">Projects</a>
+                    <a class="page-scroll" href="#project">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#team">Team</a>
+                    <a class="page-scroll" href="#team">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Contacto</a>
                   </li>
                 </ul>
                 <!-- navbar nav -->
@@ -90,26 +90,25 @@
                 data-wow-duration="1.5s"
                 data-wow-delay="1s"
               >
-                Hey Dude!
+                ¡Hola!
               </h4>
               <h1
                 class="banner-title mt-10 wow fadeInUp"
                 data-wow-duration="1.5s"
                 data-wow-delay="2s"
               >
-                <span>You're</span> Using Free Lite Version of This Template
+                Soy
+                <span class="font-weight-bold featured"> Tamara Bravo</span>
+                <span class="d-block">Frontend Developer</span>
               </h1>
-              <p>
-                Please, consider purchasing full version to get all pages,
-                features, assets and permission to remove footer credits.
-              </p>
+              <p>Interesad@ en que trabajemos juntos? Hablemos</p>
               <a
                 class="banner-contact mt-25 wow fadeInUp"
                 data-wow-duration="1.5s"
                 data-wow-delay="2.3s"
                 rel="nofollow"
-                href="https://rebrand.ly/interior-ud"
-                >Get Full Version</a
+                href="#"
+                >Quiero saber más!</a
               >
             </div>
             <!-- banner content -->
@@ -120,7 +119,7 @@
       <!-- container -->
       <div
         class="banner-image bg_cover"
-        style="background-image: url(assets/images/banner/banner-image.png)"
+        :style="'background-image: url(' + banner + ')'"
       ></div>
     </div>
     <!-- header banner -->
@@ -128,7 +127,17 @@
 </template>
 
 <script>
+import shape1 from "./../assets/banner/shape/shape-1.png";
+import logoTB from "./../assets/logo.png";
+import banner from "./../assets/banner/banner-image.png";
 export default {
   name: "Header",
+  data() {
+    return {
+      shape1: shape1,
+      logoTB: logoTB,
+      banner: banner,
+    };
+  },
 };
 </script>

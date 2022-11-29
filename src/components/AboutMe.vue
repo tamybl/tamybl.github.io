@@ -1,20 +1,20 @@
 <template>
-  <section id="about" class="about-area pt-80 pb-130">
+  <section id="about" class="about-area pt-lg-4 pb-lg-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="about-image mt-50 clearfix">
             <div class="single-image float-left">
-              <img src="assets/images/about/about-1.png" alt="About" />
+              <img :src="images.about1" alt="About" />
             </div>
             <!-- single image -->
             <div data-aos="fade-right" class="about-btn">
               <a class="main-btn" href="#"
-                ><span>4</span> años de Experiencia</a
+                ><span>+4</span> años de Experiencia</a
               >
             </div>
             <div class="single-image image-tow float-right">
-              <img src="assets/images/about/about-2.png" alt="About" />
+              <img :src="images.about2" alt="About" />
             </div>
             <!-- single image -->
           </div>
@@ -22,23 +22,27 @@
         </div>
         <div class="col-lg-6">
           <div class="about-content mt-45">
-            <h4 class="about-welcome">About Us</h4>
-            <h3 class="about-title mt-10">Reasons to choose</h3>
-            <p class="mt-25">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages <br />
-              <br />It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+            <h4 class="about-welcome">Sobre Mí</h4>
+            <h3 class="about-title mt-2">¿Quien Soy?</h3>
+            <p class="mt-5">
+              Desarrolladora Front End e Ingeniera Civil en Sónido y Acústica de
+              Santiago, Chile. Descubrí en la programación un espacio para
+              crecer y expandir mi creatividad. Siento una gran pasión por
+              ayudar a otros y puedo aportar a través del desarrollo de
+              soluciones tecnológicas que faciliten la vida de las personas.
             </p>
-            <a class="main-btn mt-25" href="#">learn more</a>
+            <p>
+              Poseo una mente inquieta y curiosa, que gusta de aprender sobre
+              nuevas tecnologías, formas de resolver problemas y buenas
+              prácticas en el código. Me apasiona enfrentarme a nuevos desafíos
+              y trabajar en equipo buscando siempre dar lo mejor de mí.
+            </p>
+            <p>
+              En estos años he tenido la oportunidad de trabajar en proyectos
+              para: BCI, Banco de Chile, Copec, Sencillito, Consorcio, Hites,
+              entre otros.
+            </p>
+            <a class="main-btn mt-2" href="#">Solicitar CV</a>
           </div>
           <!-- about content -->
         </div>
@@ -48,3 +52,28 @@
     <!-- container -->
   </section>
 </template>
+
+<script>
+import about1 from "./../assets/about/about-1.png";
+import about2 from "./../assets/about/about-2.png";
+export default {
+  name: "AboutMe",
+  data() {
+    return {
+      images: {
+        about1: about1,
+        about2: about2,
+      },
+    };
+  },
+};
+</script>
+
+<style scoped>
+@media all and (min-width: 992px) {
+  .about-image .about-btn {
+    top: 120px;
+    left: -100px;
+  }
+}
+</style>
