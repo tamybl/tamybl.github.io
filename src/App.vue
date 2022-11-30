@@ -7,6 +7,7 @@
     <AboutMe />
     <Skills />
     <Projects />
+    <Clients />
     <ContactMe />
     <Footer />
   </div>
@@ -18,6 +19,7 @@ import Header from "./components/Header.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
+import Clients from "./components/Clients.vue";
 import ContactMe from "./components/ContactMe.vue";
 import Footer from "./components/Footer.vue";
 
@@ -31,6 +33,7 @@ export default {
     Projects,
     ContactMe,
     Footer,
+    Clients,
   },
   data() {
     return {
@@ -38,6 +41,7 @@ export default {
       loading: true,
     };
   },
+  computed: {},
   mounted() {
     setTimeout(() => {
       this.loading = false;

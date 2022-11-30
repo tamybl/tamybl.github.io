@@ -1,5 +1,5 @@
 <template>
-  <header id="home" class="header-area pt-100">
+  <header id="home" class="header-area">
     <div class="shape header-shape-one">
       <img :src="shape1" alt="shape" />
     </div>
@@ -66,8 +66,8 @@
                 <!-- navbar nav -->
               </div>
               <div class="navbar-btn ml-20 d-none d-sm-block">
-                <a class="main-btn" href="#"
-                  ><i class="lni-phone"></i> +98 222 4444</a
+                <a class="main-btn" href="#contact"
+                  ><i class="lni-phone"></i> +56 9 3357 XXXX</a
                 >
               </div>
             </nav>
@@ -99,9 +99,9 @@
               >
                 Soy
                 <span class="font-weight-bold featured"> Tamara Bravo</span>
-                <span class="d-block">Frontend Developer</span>
+                <span class="d-block">Software Developer</span>
               </h1>
-              <p>Interesad@ en que trabajemos juntos? Hablemos</p>
+              <p>Interesada/o en trabajar juntos? Hablemos</p>
               <a
                 class="banner-contact mt-25 wow fadeInUp"
                 data-wow-duration="1.5s"
@@ -129,7 +129,7 @@
 <script>
 import shape1 from "./../assets/banner/shape/shape-1.png";
 import logoTB from "./../assets/logo.png";
-import banner from "./../assets/banner/banner-image.png";
+import banner from "./../assets/banner/banner-image.jpg";
 export default {
   name: "Header",
   data() {
@@ -141,3 +141,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

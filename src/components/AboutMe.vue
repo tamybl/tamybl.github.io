@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-area pt-lg-4 pb-lg-5">
+  <section id="about" class="about-area py-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -21,27 +21,30 @@
           <!-- about image -->
         </div>
         <div class="col-lg-6">
-          <div class="about-content mt-45">
-            <h4 class="about-welcome">Sobre Mí</h4>
-            <h3 class="about-title mt-2">¿Quien Soy?</h3>
-            <p class="mt-5">
-              Desarrolladora Front End e Ingeniera Civil en Sónido y Acústica de
-              Santiago, Chile. Descubrí en la programación un espacio para
-              crecer y expandir mi creatividad. Siento una gran pasión por
-              ayudar a otros y puedo aportar a través del desarrollo de
-              soluciones tecnológicas que faciliten la vida de las personas.
-            </p>
-            <p>
-              Poseo una mente inquieta y curiosa, que gusta de aprender sobre
-              nuevas tecnologías, formas de resolver problemas y buenas
-              prácticas en el código. Me apasiona enfrentarme a nuevos desafíos
-              y trabajar en equipo buscando siempre dar lo mejor de mí.
-            </p>
-            <p>
-              En estos años he tenido la oportunidad de trabajar en proyectos
-              para: BCI, Banco de Chile, Copec, Sencillito, Consorcio, Hites,
-              entre otros.
-            </p>
+          <div class="about-content my-section section-title">
+            <h4 class="sub-title">Sobre Mí</h4>
+            <h3 class="title mt-2">¿Quien Soy?</h3>
+            <article class="my-5">
+              <p>
+                Desarrolladora Front End e Ingeniera Civil en Sónido y Acústica
+                de Santiago, Chile. Descubrí en la programación un espacio para
+                crecer y expandir mi creatividad. Siento una gran pasión por
+                ayudar a otros y puedo aportar a través del desarrollo de
+                soluciones tecnológicas que faciliten la vida de las personas.
+              </p>
+              <p>
+                Poseo una mente inquieta y curiosa, que gusta de aprender sobre
+                nuevas tecnologías, formas de resolver problemas y buenas
+                prácticas en el código. Me apasiona enfrentarme a nuevos
+                desafíos y trabajar en equipo buscando siempre dar lo mejor de
+                mí.
+              </p>
+              <p>
+                En estos años he tenido la oportunidad de trabajar en proyectos
+                para: BCI, Banco de Chile, Copec, Sencillito, Consorcio, Hites,
+                entre otros.
+              </p>
+            </article>
             <a class="main-btn mt-2" href="#">Solicitar CV</a>
           </div>
           <!-- about content -->

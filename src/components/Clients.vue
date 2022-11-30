@@ -1,0 +1,137 @@
+<template>
+  <section id="team" class="team-area pt-125 pb-130 gray-bg">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-title text-center pb-20">
+            <h5 class="sub-title mb-15">Clientes</h5>
+            <h2 class="title">Empresas a quienes he prestado servicio</h2>
+          </div>
+          <!-- section title -->
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div
+            class="single-team text-center mt-30 wow fadeInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="0.4s"
+          >
+            <div class="team-image">
+              <img src="assets/images/team/team-1.jpg" alt="Team" />
+            </div>
+            <div class="team-content">
+              <h4 class="team-name"><a href="#">COPEC</a></h4>
+              <span class="sub-title">CEO & Founder</span>
+              <ul class="social mt-25">
+                <li>
+                  <a href="#"><i class="lni-facebook-filled"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-twitter-original"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-linkedin-original"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- single team -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div
+            class="single-team text-center mt-30 wow fadeInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="0.8s"
+          >
+            <div class="team-image">
+              <img src="assets/images/team/team-2.jpg" alt="Team" />
+            </div>
+            <div class="team-content">
+              <h4 class="team-name"><a href="#">Banco de Chile</a></h4>
+              <span class="sub-title">Chief Designer</span>
+              <ul class="social mt-25">
+                <li>
+                  <a href="#"><i class="lni-facebook-filled"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-twitter-original"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-linkedin-original"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- single team -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div
+            class="single-team text-center mt-30 wow fadeInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="1.2s"
+          >
+            <div class="team-image">
+              <img src="assets/images/team/team-3.jpg" alt="Team" />
+            </div>
+            <div class="team-content">
+              <h4 class="team-name"><a href="#">BCI</a></h4>
+              <span class="sub-title">Consultant</span>
+              <ul class="social mt-25">
+                <li>
+                  <a href="#"><i class="lni-facebook-filled"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-twitter-original"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-linkedin-original"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- single team -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div
+            class="single-team text-center mt-30 wow fadeInUp"
+            data-wow-duration="1.5s"
+            data-wow-delay="1.6s"
+          >
+            <div class="team-image">
+              <img src="assets/images/team/team-4.jpg" alt="Team" />
+            </div>
+            <div class="team-content">
+              <h4 class="team-name"><a href="#">Mark Parker</a></h4>
+              <span class="sub-title">Intern</span>
+              <ul class="social mt-25">
+                <li>
+                  <a href="#"><i class="lni-facebook-filled"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-twitter-original"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-linkedin-original"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- single team -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Clients",
+  data() {
+    return {};
+  },
+};
+</script>

@@ -4,8 +4,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <div class="section-title text-center pb-20">
-            <h5 class="sub-title mb-15">Contact us</h5>
-            <h2 class="title">Get In touch</h2>
+            <h5 class="sub-title mb-15">Contacto</h5>
+            <h2 class="title">¿Quieres comunicarte conmigo?</h2>
           </div>
           <!-- section title -->
         </div>
@@ -26,8 +26,7 @@
                     <input
                       type="text"
                       name="name"
-                      placeholder="Your Name"
-                      data-error="Name is required."
+                      placeholder="Tu nombre"
                       required="required"
                     />
                     <div class="help-block with-errors"></div>
@@ -39,7 +38,7 @@
                     <input
                       type="email"
                       name="email"
-                      placeholder="Your Email"
+                      placeholder="tucorreo@tudominio.com"
                       data-error="Valid email is required."
                       required="required"
                     />
@@ -52,7 +51,7 @@
                     <input
                       type="text"
                       name="subject"
-                      placeholder="Subject"
+                      placeholder="Asunto"
                       data-error="Subject is required."
                       required="required"
                     />
@@ -65,7 +64,7 @@
                     <input
                       type="text"
                       name="phone"
-                      placeholder="Phone"
+                      placeholder="+569 1234 5678"
                       data-error="Phone is required."
                       required="required"
                     />
@@ -76,7 +75,7 @@
                 <div class="col-md-12">
                   <div class="single-form form-group">
                     <textarea
-                      placeholder="Your Mesaage"
+                      placeholder="Hola Tamara, me interesa saber más de tu trabajo..."
                       name="message"
                       data-error="Please,leave us a message."
                       required="required"
@@ -88,7 +87,9 @@
                 <p class="form-message"></p>
                 <div class="col-md-12">
                   <div class="single-form form-group text-center">
-                    <button type="submit" class="main-btn">send message</button>
+                    <button type="submit" class="main-btn">
+                      Enviar Mensaje
+                    </button>
                   </div>
                   <!-- single form -->
                 </div>

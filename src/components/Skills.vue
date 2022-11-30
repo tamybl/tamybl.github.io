@@ -1,5 +1,5 @@
 <template>
-  <section id="service" class="services-area pt-lg-5 pb-130 gray-bg">
+  <section id="service" class="services-area py-section gray-bg">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6">
