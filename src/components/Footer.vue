@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="footer-area">
+  <footer id="footer" class="footer-area black-bg">
     <div class="footer-widget pt-80 pb-130">
       <div class="container">
         <div class="row">

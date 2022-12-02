@@ -20,7 +20,7 @@
           <div
             class="single-services text-center wow fadeInUp"
             data-wow-duration="1.5s"
-            data-wow-delay="0.4s"
+            data-wow-delay="5s"
           >
             <div class="services-icons">
               <i
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import WOW from "wowjs";
 import modyoLogo from "./../assets/skills/modyo.svg";
 import veeValidate from "./../assets/skills/vee-validate.png";
 import vuexLogo from "./../assets/skills/vuex.png";
@@ -216,6 +217,11 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    new WOW.WOW({
+      live: true,
+    }).init();
   },
 };
 </script>

@@ -23,7 +23,7 @@
   --primary-color: #eb3656;
   --secondary-color: #eb3656;
 }
-@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Hind:wght@400;500;600;700&family=Quattrocento:wght@400;700&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -180,13 +180,13 @@ p {
 
 /*===== All Section Title Style =====*/
 .py-section {
-  padding-top:  3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top:  4rem;
+  padding-bottom: 4rem;
 }
 @media all and (min-width: 768px) {
   .py-section {
-    padding-top:  5rem;
-    padding-bottom: 5rem;
+    padding-top:  6rem;
+    padding-bottom: 6rem;
   }
 }
 .section-title .sub-title {
@@ -1156,12 +1156,13 @@ p {
   opacity: 0;
 }
 .single-project .project-content .project-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Barlow", sans-serif;
   position: relative;
   color: #fff;
-  margin-left: 60px;
+  margin-left: 45px;
+  text-align: left;
 }
 .single-project .project-content .project-title::before {
   position: absolute;
@@ -1223,18 +1224,25 @@ p {
 
 .single-team .team-image img {
   width: 100%;
+  max-height: 40px;
 }
-
+.single-team {
+  min-height: 60px;
+  position: relative;
+}
 .single-team .team-content {
   width: 80%;
   margin: 0 auto;
   padding: 30px 15px;
-  position: relative;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .single-team .team-content {
@@ -1268,6 +1276,7 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+  height: 100px;
 }
 .single-team .team-content .social li {
   display: inline-block;
@@ -1574,6 +1583,7 @@ p.form-message.error {
 .footer-logo p {
   line-height: 26px;
   font-size: 16px;
+  color: #fff;
 }
 
 .footer-logo .footer-info li {
@@ -1589,7 +1599,6 @@ p.form-message.error {
 }
 .footer-logo .footer-info li .single-info .info-icon i {
   font-size: 18px;
-  /*color: .footer-logo .footer-info li .single-info .info-icon i theme-color;*/
 }
 .footer-logo .footer-info li .single-info .info-content {
   padding-left: 30px;
@@ -1629,6 +1638,7 @@ p.form-message.error {
   font-size: 22px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  color: #fff;
 }
 
 .footer-link ul li {
@@ -1636,7 +1646,7 @@ p.form-message.error {
 }
 .footer-link ul li a {
   font-size: 16px;
-  color: #646464;
+  color: #8d8d8d;
   font-family: "Hind", sans-serif;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -1699,10 +1709,20 @@ p.form-message.error {
 }
 
 .copyright-area {
-  border-top: 1px solid #eceff8;
+  border-top: 1px solid #363636;
   padding: 13px 0;
 }
 
+.copyright-area p {
+  font-size: 14px;
+  margin: 0;
+}
+.copyright-area a {
+  color:#eb3656;
+}
+.copyright-area a:hover {
+  color:#fff;
+}
 .back-to-top {
   position: fixed;
   bottom: 20px;

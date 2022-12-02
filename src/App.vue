@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import WOW from "wowjs";
 import Loader from "./components/Loader.vue";
 import Header from "./components/Header.vue";
 import AboutMe from "./components/AboutMe.vue";
@@ -45,7 +46,15 @@ export default {
   mounted() {
     setTimeout(() => {
       this.loading = false;
+      //this.wowAnimation();
     }, 1500);
+  },
+  methods: {
+    wowAnimation() {
+      new WOW.WOW({
+        live: false,
+      }).init();
+    },
   },
 };
 </script>
@@ -56,7 +65,6 @@ export default {
 @import "./css/slider.css";
 @import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

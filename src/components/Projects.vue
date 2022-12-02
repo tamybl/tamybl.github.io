@@ -1,5 +1,5 @@
 <template>
-  <section id="project" class="project-area pt-5 pb-4">
+  <section id="project" class="project-area py-section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6">
@@ -23,6 +23,7 @@
               <h3 class="project-title">{{ project.name }}</h3>
               <div class="d-flex align-items-center justify-content-center">
                 <a
+                  v-if="project.codeUrl.length > 0"
                   class="icon-project mr-2"
                   :href="project.codeUrl"
                   target="_blank"
@@ -30,7 +31,7 @@
                 ></a>
                 <a
                   class="icon-project"
-                  :href="baseURL + project.previewUrl"
+                  :href="project.previewUrl"
                   target="_blank"
                   ><i class="devicon-chrome-plain"></i
                 ></a>
@@ -88,14 +89,14 @@ export default {
           name: "Freelancer",
           imgSrc: p1,
           codeUrl: "https://github.com/tamybl/freelancer",
-          previewUrl: "/freelancer/",
-          tags: ["html5", "css3"],
+          previewUrl: "https://www.tamybl.dev/freelancer/",
+          tags: ["HTML5", "CSS3"],
         },
         {
           name: "LabCar Boilerplate",
           imgSrc: p2,
           codeUrl: "https://github.com/tamybl/lab-car-boilerplate",
-          previewUrl: "/lab-car-boilerplate/",
+          previewUrl: "https://www.tamybl.dev/lab-car-boilerplate/",
           tags: ["HTML5", "Bootstrap", "jQuery"],
         },
         {
@@ -106,24 +107,24 @@ export default {
           tags: [],
         },
         {
-          name: "BCI",
+          name: "BCI - Personas",
           imgSrc: p4,
-          codeUrl: "https://github.com/tamybl/retromovies",
-          previewUrl: "/retromovies/",
-          tags: [],
+          codeUrl: "",
+          previewUrl: "https://www.bci.cl",
+          tags: ["Javascript", "JQuery", "VueJS"],
         },
         {
           name: "Pint Store",
           imgSrc: p5,
           codeUrl: "https://github.com/tamybl/beautysales-spa",
-          previewUrl: "/beautysales-spa/",
+          previewUrl: "https://www.tamybl.dev/beautysales-spa/",
           tags: ["HTML5", "Javascript"],
         },
         {
           name: "Ecosnat",
           imgSrc: p6,
           codeUrl: "https://github.com/tamybl/ecosnat",
-          previewUrl: "/ecosnat/",
+          previewUrl: "https://www.tamybl.dev/ecosnat/",
           tags: ["Javascript", "HTML5", "CSS3"],
         },
       ],

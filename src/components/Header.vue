@@ -127,6 +127,7 @@
 </template>
 
 <script>
+import WOW from "wowjs";
 import shape1 from "./../assets/banner/shape/shape-1.png";
 import logoTB from "./../assets/logo.png";
 import banner from "./../assets/banner/banner-image.jpg";
@@ -138,6 +139,11 @@ export default {
       logoTB: logoTB,
       banner: banner,
     };
+  },
+  mounted() {
+    new WOW.WOW({
+      live: true,
+    }).init();
   },
 };
 </script>
